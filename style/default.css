@@ -1,0 +1,326 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	background-color: #1A1A1A;
+
+	color: #E8E8E8;
+	
+	
+}
+
+h1{
+	font-size: 50pt;
+	padding-bottom: 30px;
+	color: #FFB600;
+	
+}
+
+
+
+p{
+	font-size: 16pt;
+	line-height: 2.0;
+	font-weight: lighter;
+	
+}
+
+#wrapper-big{
+	width: 100%;
+	background-color: transparent;
+}
+
+#wrapper{
+	width: 90%;
+/*	border: 2px solid white;*/
+	margin: 0 auto;
+	position: relative;
+	
+}
+
+.header{
+	margin-top: 2%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	
+
+	
+}
+.logo{
+	
+	width: 10%;
+	
+	padding-left: 10%;
+	
+}
+
+.logo img{
+	width: 80px;
+}
+
+.nav{
+	width: 90%;
+/*	background-color: black;*/
+	
+}
+
+.nav ul{
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 10%;
+	
+}
+
+.nav a{
+	text-decoration: none;
+	
+	
+	
+}
+
+.nav ul li{
+	margin: 0 30px;
+	list-style: none;
+}
+
+.service, .work, .company, .careers, .contact{
+	padding-bottom: 10px;
+}
+
+
+.section-1, .section-2{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	position: relative;
+	
+	
+}
+
+.content-1{
+	width: 35%;
+/*	background-color: blue;*/
+	text-align: end;
+	position: absolute;
+	right: 50%;
+	z-index: 1;
+}
+
+.hinh-1{
+	
+	width: 65%;
+	text-align: end;
+	position: absolute;
+	top: 20%;
+	right: 10%;
+}
+
+.hinh-1 img{
+	width: 50%;
+	
+}
+
+
+.hinh-2 img{
+	width: 50%;
+}
+
+.hinh-2{
+	width: 65%;
+	position: absolute;
+	left: 10%;
+}
+
+.content-2{
+	width: 35%;
+	text-align: left;
+	position: absolute;
+	right: 10%;
+}
+
+.section-3{
+	margin-top: 250px;
+	display: flex;
+	justify-content: center;
+	height: 620px;
+/*	background-color: olive;*/
+	
+/*	position: relative;*/
+	
+}
+
+.box{
+	width: 300px;
+	height: 400px;
+/*	background-color: red;*/
+	margin: 0 30px;
+	
+	
+	
+}
+
+
+.box h1{
+	opacity: 0;
+}
+
+.box:hover h1{
+	opacity:1;
+	transition-duration: 0.5s;
+}
+	
+
+.circle-1{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border-style: solid;
+	color: white;
+	background-color: transparent;
+	position: absolute;
+	right: 8%;
+	animation-name: doi-chieu;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+/*	animation-direction: alternate;*/
+	
+}
+
+@keyframes doi-chieu{
+	from{
+		transform:rotate(0deg)
+              translate(-165px)
+              rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg)
+              translate(-165px)
+              rotate(360deg);
+	}
+}
+
+.main{
+  width:330px;
+  height:330px;
+  border:2px solid #CCC;
+	background-color: transparent;
+  position:absolute;
+  top:0; bottom:-100%; left:0;right:0%;
+  margin:auto;
+  border-radius:50%; 
+}
+
+.circle-2{
+  width:30px;
+  height:30px;
+  background:cyan;
+  border-radius:50%;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle 6s linear infinite;
+}
+
+@keyframes circle{
+  0%{
+    transform:rotate(0deg)
+              translate(-165px)
+              rotate(0deg);
+  
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-165px)
+              rotate(-360deg);
+  }
+}
+
+.section-5{
+	background-color: transparent;
+}
+.social-media ul{
+/*	display: flex;*/
+	position: absolute;
+	top:35%;
+	position: fixed;
+	left: 0.5%;
+	background-color: transparent;
+}
+
+.social-media ul li{
+	display: block;
+	padding: 10px;
+	list-style: none;
+	text-align: center;
+	background-color: transparent;
+}
+.social-media ul li a{
+	background-color: transparent;
+}
+.social-media img{
+	width: 28px;
+	background-color: transparent;
+}
+
+.social-media .instagram img, .social-media .dribbble img{
+	width: 35px;
+	background-color: transparent;
+}
+
+.section-4{
+	width: 100%;
+	height: 800px;
+	margin-top: 400px;
+	position: relative;
+	background-color: transparent;
+	text-align: center;
+}
+
+.right-hand img{
+	width: 690px;
+}
+
+.right-hand{
+	position: absolute;
+	right: -65px;
+	bottom: 15%;
+	background-color: transparent;
+	z-index: 2;
+}
+
+.left-hand img{
+	width: 650px;
+	background-color: transparent;
+}
+
+.left-hand{
+	position: absolute;
+	left: -70px;
+	
+	background-color: transparent;
+}
+
+.hvr-bob {
+	background-color: transparent !important;
+}
+
+.content-3{
+	top:25%;
+	position: absolute;
+	right: 40%;
+	text-align: center;
+	width: 25%;
+	background-color: transparent;
+	z-index: 50;
+}
+
+
+
+	
+	
